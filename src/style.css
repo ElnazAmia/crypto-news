@@ -3,6 +3,7 @@
   color: #333;
   font-family: "Encode Sans Expanded", sans-serif;
 }
+
 a {
   text-decoration: none;
   transition: all 0.2s ease-in-out;
@@ -70,22 +71,47 @@ a:hover > b {
 .text-yellow {
   color: #f9b500;
 }
-.app{
-    width: 1200px;
+.app {
+  width: 1200px;
 }
-@media (max-width:1199.98){.app{
+@media (max-width: 1199.98px) {
+  .app {
     max-width: 768px;
+  }
 }
-    
+@media (max-width: 991.98px) {
+  .header-logo {
+    height: 15px;
+    margin: 32px 0 !important;
+  }
+  .header-menu-item-link {
+    padding: 0 5px !important;
+    font-size: 14px;
+  }
 }
-@media (max-width:765.98){.app{
+@media (max-width: 765.98px) {
+  .app {
     max-width: 576px;
+  }
 }
-    
-}
-@media (max-width:575.98){.app{
+@media (max-width: 575.98px) {
+  .app {
     max-width: calc(100%-30px);
-    padding: 0 15px;
+    padding: 0 25px;
+  }
 }
-    
+.header-logo {
+  float: left;
+  margin: 30px 0;
+}
+.header-menu {
+  float: right;
+  list-style: none;
+}
+.header-menu-item {
+  display: inline;
+}
+.header-menu-item-link {
+  padding: 0 15px;
+  line-height: 80px;
 }
